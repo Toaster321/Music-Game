@@ -1,0 +1,369 @@
+[gd_scene load_steps=32 format=3 uid="uid://ctvwocrct6h0q"]
+
+[ext_resource type="Texture2D" uid="uid://bdpyegiggo76c" path="res://lsn364xxpb-ludwig-neusonic-6-5x14-snare-drum-satin-rb.png" id="1_3ehxn"]
+[ext_resource type="Texture2D" uid="uid://d0vmcqg0hed2i" path="res://colorful-geometric-background-trendy-gradient-shapes-composition-cool-background-design-for-posters-free-vector.jpg" id="1_oyqmy"]
+[ext_resource type="Script" path="res://Scripts/Key.gd" id="2_d5etg"]
+[ext_resource type="Script" path="res://Background.gd" id="2_per1s"]
+[ext_resource type="Texture2D" uid="uid://3ao1xwdwg16a" path="res://ea1f01b00045c4d9f740238d1bd9a07a.png" id="3_44g7y"]
+[ext_resource type="AudioStream" uid="uid://2r6m8txxaco8" path="res://drum-beat-02-36276.mp3" id="3_d4mk1"]
+[ext_resource type="AudioStream" uid="uid://u6c670bbli6c" path="res://4409__pinkyfinger__piano-notes-1-octave/68437__pinkyfinger__piano-a.wav" id="3_h6ohf"]
+[ext_resource type="AudioStream" uid="uid://dw52mq3ik28cb" path="res://game-music-loop-7-145285.mp3" id="3_ub7ek"]
+[ext_resource type="Texture2D" uid="uid://bik14g6oru454" path="res://Dreadnought-min.png" id="4_83kit"]
+[ext_resource type="AudioStream" uid="uid://bdsncu54c0uv0" path="res://tr909-snare-drum-241413.mp3" id="5_q2t1c"]
+[ext_resource type="AudioStream" uid="uid://bq3c3o0e2obqy" path="res://awesome-kick-drum-41824.mp3" id="6_1hf1q"]
+[ext_resource type="AudioStream" uid="uid://b1xjhafmxtfhp" path="res://4409__pinkyfinger__piano-notes-1-octave/68444__pinkyfinger__piano-eb.wav" id="10_8fome"]
+[ext_resource type="AudioStream" uid="uid://dj6h7pe1twiyl" path="res://f-string-d2-39594.mp3" id="11_t1gxu"]
+[ext_resource type="AudioStream" uid="uid://cap7mxu8nc887" path="res://4409__pinkyfinger__piano-notes-1-octave/68446__pinkyfinger__piano-f.wav" id="12_jahmu"]
+[ext_resource type="AudioStream" uid="uid://bbsjc1cx7ffjn" path="res://guitar-apoggiatura2_16b-41545.mp3" id="12_nm1ey"]
+[ext_resource type="AudioStream" uid="uid://ddv40huvsyv3y" path="res://guitar-strum-74592.mp3" id="13_0gjjh"]
+[ext_resource type="AudioStream" uid="uid://g2f8cenrguk5" path="res://guitar-in-d-89205.mp3" id="14_tigq6"]
+[ext_resource type="AudioStream" uid="uid://dg3ludmfeij4j" path="res://4409__pinkyfinger__piano-notes-1-octave/68448__pinkyfinger__piano-g.wav" id="14_vfgtb"]
+[ext_resource type="Script" path="res://Volume.gd" id="15_gug8x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l43n6"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_0wcnl"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_crflk"]
+font_size = 200
+font_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_mplrp"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_1hh5m"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_llq0e"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_vvt36"]
+font_size = 200
+font_color = Color(0.0214346, 0.0214346, 0.0214346, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_1heps"]
+font_size = 200
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_jb2x4"]
+font_size = 300
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_b1e0v"]
+font_size = 300
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_iwjll"]
+font_size = 300
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_30ipt"]
+font_size = 300
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(578.5, 323.5)
+scale = Vector2(0.598438, 0.684375)
+texture = ExtResource("1_oyqmy")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 453.0
+offset_top = 476.0
+offset_right = 637.0
+offset_bottom = 578.0
+text = "Background"
+script = ExtResource("2_per1s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource("3_ub7ek")
+
+[node name="Sprite2D" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(186, 128)
+scale = Vector2(0.19, 0.260455)
+texture = ExtResource("1_3ehxn")
+script = ExtResource("2_d5etg")
+keybind = "w"
+sound = NodePath("../Piano/Drum 2")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -89.4738
+offset_top = -53.7522
+offset_right = 99.5262
+offset_bottom = 219.248
+text = "W"
+label_settings = SubResource("LabelSettings_l43n6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(64, 272.313)
+scale = Vector2(0.155, 0.246136)
+texture = ExtResource("1_3ehxn")
+script = ExtResource("2_d5etg")
+sound = NodePath("../Piano/Drum 2")
+
+[node name="Label" type="Label" parent="Sprite2D2"]
+offset_left = -70.9677
+offset_top = -115.028
+offset_right = 123.032
+offset_bottom = 157.972
+text = "A"
+label_settings = SubResource("LabelSettings_0wcnl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(179, 274)
+scale = Vector2(0.15875, 0.260455)
+texture = ExtResource("1_3ehxn")
+script = ExtResource("2_d5etg")
+keybind = "s"
+sound = NodePath("../Piano/Drum 3")
+
+[node name="Label" type="Label" parent="Sprite2D3"]
+offset_left = -44.0946
+offset_top = -122.862
+offset_right = 65.9054
+offset_bottom = 150.138
+text = "S"
+label_settings = SubResource("LabelSettings_crflk")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(299, 277)
+scale = Vector2(0.17875, 0.271364)
+texture = ExtResource("1_3ehxn")
+script = ExtResource("2_d5etg")
+keybind = "d"
+sound = NodePath("../Piano/Drum 4")
+
+[node name="Label" type="Label" parent="Sprite2D4"]
+offset_left = -55.9441
+offset_top = -132.663
+offset_right = 91.0559
+offset_bottom = 140.337
+text = "D"
+label_settings = SubResource("LabelSettings_mplrp")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(557, 86)
+scale = Vector2(0.327877, 0.338333)
+texture = ExtResource("3_44g7y")
+script = ExtResource("2_d5etg")
+keybind = "t"
+sound = NodePath("../Piano/Piano 1")
+
+[node name="Label" type="Label" parent="Sprite2D5"]
+offset_left = -42.6989
+offset_top = -180.296
+offset_right = 70.3011
+offset_bottom = 92.7044
+text = "T"
+label_settings = SubResource("LabelSettings_1hh5m")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(450, 230)
+scale = Vector2(0.272107, 0.383333)
+texture = ExtResource("3_44g7y")
+script = ExtResource("2_d5etg")
+keybind = "f"
+sound = NodePath("../Piano/Piano 2")
+
+[node name="Label" type="Label" parent="Sprite2D6"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "F"
+label_settings = SubResource("LabelSettings_llq0e")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(570, 227)
+scale = Vector2(0.244853, 0.428333)
+texture = ExtResource("3_44g7y")
+script = ExtResource("2_d5etg")
+keybind = "g"
+sound = NodePath("../Piano/Piano 3")
+
+[node name="Label" type="Label" parent="Sprite2D7"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "G"
+label_settings = SubResource("LabelSettings_vvt36")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(698, 228)
+scale = Vector2(0.2849, 0.4225)
+texture = ExtResource("3_44g7y")
+script = ExtResource("2_d5etg")
+keybind = "h"
+sound = NodePath("../Piano/Piano 4")
+
+[node name="Label" type="Label" parent="Sprite2D8"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "H"
+label_settings = SubResource("LabelSettings_1heps")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(986, 109)
+rotation = 0.773166
+scale = Vector2(0.226082, 0.173599)
+texture = ExtResource("4_83kit")
+script = ExtResource("2_d5etg")
+keybind = "i"
+sound = NodePath("../Piano/Guitar 1")
+
+[node name="Label" type="Label" parent="Sprite2D9"]
+offset_left = 208.992
+offset_top = 394.388
+offset_right = 410.992
+offset_bottom = 667.388
+rotation = 2.37282
+text = "I"
+label_settings = SubResource("LabelSettings_jb2x4")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(846, 216)
+rotation = 0.605565
+scale = Vector2(0.209508, 0.189923)
+texture = ExtResource("4_83kit")
+script = ExtResource("2_d5etg")
+keybind = "j"
+sound = NodePath("../Piano/Guitar 2")
+
+[node name="Label" type="Label" parent="Sprite2D10"]
+offset_left = -79.9932
+offset_top = 214.791
+offset_right = 10.0068
+offset_bottom = 623.791
+rotation = -0.530088
+text = "J"
+label_settings = SubResource("LabelSettings_b1e0v")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(958, 236)
+rotation = 0.589131
+scale = Vector2(0.208428, 0.179702)
+texture = ExtResource("4_83kit")
+script = ExtResource("2_d5etg")
+keybind = "k"
+sound = NodePath("../Piano/Guitar 3")
+
+[node name="Label" type="Label" parent="Sprite2D11"]
+offset_left = -158.14
+offset_top = 216.281
+offset_right = 33.8599
+offset_bottom = 625.281
+rotation = -0.586428
+text = "K"
+label_settings = SubResource("LabelSettings_iwjll")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(1081, 252)
+rotation = 0.755907
+scale = Vector2(0.220718, 0.186975)
+texture = ExtResource("4_83kit")
+script = ExtResource("2_d5etg")
+keybind = "l"
+sound = NodePath("../Piano/Guitar 4")
+
+[node name="Label" type="Label" parent="Sprite2D12"]
+offset_left = -143.734
+offset_top = 108.499
+offset_right = 19.2661
+offset_bottom = 517.499
+rotation = -0.847936
+text = "L"
+label_settings = SubResource("LabelSettings_30ipt")
+
+[node name="Piano" type="Node2D" parent="."]
+position = Vector2(122, 517)
+scale = Vector2(1, 2)
+
+[node name="Drum 1" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("3_d4mk1")
+bus = &"Volume"
+
+[node name="Drum 2" type="AudioStreamPlayer2D" parent="Piano"]
+position = Vector2(2, -3.05176e-05)
+stream = ExtResource("3_d4mk1")
+bus = &"Volume"
+
+[node name="Drum 3" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("5_q2t1c")
+bus = &"Volume"
+
+[node name="Drum 4" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("6_1hf1q")
+volume_db = 5.0
+bus = &"Volume"
+
+[node name="Piano 1" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("3_h6ohf")
+bus = &"Volume"
+
+[node name="Piano 2" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("10_8fome")
+bus = &"Volume"
+
+[node name="Piano 3" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("12_jahmu")
+bus = &"Volume"
+
+[node name="Piano 4" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("14_vfgtb")
+bus = &"Volume"
+
+[node name="Guitar 1" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("11_t1gxu")
+bus = &"Volume"
+
+[node name="Guitar 2" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("12_nm1ey")
+bus = &"Volume"
+
+[node name="Guitar 3" type="AudioStreamPlayer2D" parent="Piano"]
+stream = ExtResource("13_0gjjh")
+volume_db = 20.0
+bus = &"Volume"
+
+[node name="Guitar 4" type="AudioStreamPlayer2D" parent="Piano"]
+position = Vector2(27, -33.5)
+stream = ExtResource("14_tigq6")
+volume_db = 20.0
+bus = &"Volume"
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 322.0
+offset_top = 428.0
+offset_right = 783.0
+offset_bottom = 462.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("15_gug8x")
+bus_name = "Volume"
+
+[node name="Label" type="Label" parent="HSlider"]
+layout_mode = 0
+offset_left = 201.0
+offset_top = -22.0
+offset_right = 260.0
+offset_bottom = 1.0
+text = "Volume"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
